@@ -19,7 +19,7 @@
     "package-type"         : "Zip",
     "function-role"        : "arn:aws:iam::052987743965:role/service-role/OnLoanApprovedForExternal-role-njghjd5f",
     "tracing-mode"         : "PassThrough",
-    "environment-variables" : "",
+    "environment-variables" : "\"CreditApprovalURL\"=\"https://g9yh14f7ve.execute-api.ap-south-1.amazonaws.com/Authorizeddev/creditapproval/creditor\"",
     "image-tag"             : "",
     "function-architecture" : "x86_64"
 }
