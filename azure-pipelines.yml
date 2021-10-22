@@ -1,0 +1,29 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+
+    
+- task: LambdaNETCoreDeploy@1
+  inputs:
+    awsCredentials: 'awsconnection'
+    regionName: 'ap-south-1'
+    command: 'deployFunction'
+    packageOnly: false
+    lambdaProjectPath: './OnLoanApprovedForExternal'
+    functionName: 'OnLoanApprovedForExternal'
+    functionRole: 'azure-lambda-role'
+    functionHandler: 'OnLoanApprovedForExternal::OnLoanApprovedForExternal.Function::FunctionHandler'
+    functionMemory: 512
+    functionTimeout: 60
