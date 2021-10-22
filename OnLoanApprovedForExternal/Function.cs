@@ -28,7 +28,7 @@ namespace OnLoanApprovedForExternal
         public async Task FunctionHandler(Loan input, ILambdaContext context)
         {
             input.LoanApplication_Status = 8; //Loan_Status 8 i.e. Closed by External Service
-            input.LoanApplication_BankerComment = "Closed by External Service";
+            input.LoanApplication_BankerComment = "Closed by External Service"; 
 
             string json = JsonConvert.SerializeObject(input);
             string StepBodyName = Environment.GetEnvironmentVariable("StepBodyName");
