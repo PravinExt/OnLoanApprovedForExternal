@@ -18,7 +18,6 @@ C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\ne
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\K4os.Hash.xxHash.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\MySql.Data.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\Ubiety.Dns.Core.dll
-C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\Zstandard.Net.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\System.Configuration.ConfigurationManager.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\System.Security.AccessControl.dll
@@ -31,3 +30,7 @@ C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\obj\Debug\ne
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Primitives.dll
+C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\AWSSDK.Core.dll
+C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\ZstdNet.dll
+C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Debug\netcoreapp2.1\AWSSDK.StepFunctions.dll

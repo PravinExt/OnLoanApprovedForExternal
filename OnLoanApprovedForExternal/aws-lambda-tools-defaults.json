@@ -10,7 +10,7 @@
     "region"      : "ap-south-1",
     "configuration" : "Release",
     "framework"     : "netcoreapp2.1",
-    "function-runtime" : "dotnetcore2.1",
+    "function-runtime" : "dotnetcore3.1",
     "function-memory-size" : 512,
     "function-timeout"     : 15,
     "function-handler"     : "OnLoanApprovedForExternal::OnLoanApprovedForExternal.Function::FunctionHandler",
@@ -19,7 +19,7 @@
     "package-type"         : "Zip",
     "function-role"        : "arn:aws:iam::052987743965:role/service-role/OnLoanApprovedForExternal-role-njghjd5f",
     "tracing-mode"         : "PassThrough",
-    "environment-variables" : "\"CreditApprovalURL\"=\"https://g9yh14f7ve.execute-api.ap-south-1.amazonaws.com/Authorizeddev/creditapproval/creditor\"",
+    "environment-variables" : "\"ExternalAccessKey\"=\"AKIAQYVSQZ3O3LYYLYW3\";\"ExternalSecreteKey\"=\"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\";\"StateMachineArn\"=\"arn:aws:states:ap-south-1:052987743965:stateMachine:PBLoanProcessOrchestration\";\"StepFunctionURL\"=\"https://g9yh14f7ve.execute-api.ap-south-1.amazonaws.com/Authorizeddev/execution\";\"StepBodyName\"=\"MyExecution\"",
     "image-tag"             : "",
     "function-architecture" : "x86_64"
 }

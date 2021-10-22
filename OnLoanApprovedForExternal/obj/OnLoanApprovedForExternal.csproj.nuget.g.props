@@ -20,5 +20,7 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\Administrator\.nuget\packages\awssdk.core\3.7.3.23</PkgAWSSDK_Core>
+    <PkgAWSSDK_StepFunctions Condition=" '$(PkgAWSSDK_StepFunctions)' == '' ">C:\Users\Administrator\.nuget\packages\awssdk.stepfunctions\3.7.0.83</PkgAWSSDK_StepFunctions>
   </PropertyGroup>
 </Project>

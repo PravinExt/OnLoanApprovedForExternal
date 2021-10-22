@@ -12,7 +12,6 @@ C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\K4os.Hash.xxHash.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\MySql.Data.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\Ubiety.Dns.Core.dll
-C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\Zstandard.Net.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\Newtonsoft.Json.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\System.Configuration.ConfigurationManager.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\System.Runtime.CompilerServices.Unsafe.dll
@@ -32,3 +31,7 @@ C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\obj\Release\
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\Microsoft.Extensions.Configuration.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\Microsoft.Extensions.Primitives.dll
+C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\AWSSDK.Core.dll
+C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\AWSSDK.StepFunctions.dll
+C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Work\BankPOC\OnLoanApprovedForExternal\OnLoanApprovedForExternal\bin\Release\netcoreapp2.1\rhel.7.2-x64\ZstdNet.dll
