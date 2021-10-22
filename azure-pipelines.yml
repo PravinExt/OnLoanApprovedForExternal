@@ -13,33 +13,17 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: | 
-    dotnet restore OnLoanApprovedForExternal.sln
-    ls
-  displayName: 'dotnet restore'
 
-
-- script: | 
-    dotnet build OnLoanApprovedForExternal.sln
-    ls
-    cd /home/vsts/work/1/s/OnLoanApprovedForExternal/bin/Debug/netcoreapp2.1/
-    ls -al
-    pwd
-  displayName: 'dotnet build'
-
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '/home/vsts/work/1/s/OnLoanApprovedForExternal/bin/Debug/netcoreapp2.1/'
-    includeRootFolder: true
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
     
-- task: LambdaDeployFunction@1
+- task: LambdaNETCoreDeploy@1
   inputs:
     awsCredentials: 'awsconnection'
     regionName: 'ap-south-1'
-    deploymentMode: 'codeonly'
+    command: 'deployFunction'
+    packageOnly: false
+    lambdaProjectPath: './OnLoanApprovedForExternal'
     functionName: 'OnLoanApprovedForExternal'
-    codeLocation: 'localfile'
-    localZipFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    functionRole: 'azure-lambda-role'
+    functionHandler: 'OnLoanApprovedForExternal::OnLoanApprovedForExternal.Function::FunctionHandler'
+    functionMemory: 512
+    functionTimeout: 60
