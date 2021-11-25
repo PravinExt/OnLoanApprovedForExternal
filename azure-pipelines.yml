@@ -14,16 +14,42 @@ variables:
 
 steps:
 
+- script: | 
+    dotnet restore OnLoanApprovedForExternal.sln
+    ls
+  displayName: 'dotnet restore'
+
+
+- script: | 
+    dotnet build OnLoanApprovedForExternal.sln
+    ls
+    cd /home/vsts/work/1/s/OnLoanApprovedForExternal/bin/Debug/netcoreapp2.1/
+    ls -al
+    pwd
+  displayName: 'dotnet build'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '/home/vsts/work/1/s/OnLoanApprovedForExternal/bin/Debug/netcoreapp2.1/'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
     
-- task: LambdaNETCoreDeploy@1
+- task: LambdaDeployFunction@1
   inputs:
     awsCredentials: 'awsconnection'
     regionName: 'ap-south-1'
-    command: 'deployFunction'
-    packageOnly: false
-    lambdaProjectPath: './OnLoanApprovedForExternal'
+    deploymentMode: 'codeandconfiguration'
     functionName: 'OnLoanApprovedForExternal'
-    functionRole: 'azure-lambda-role'
     functionHandler: 'OnLoanApprovedForExternal::OnLoanApprovedForExternal.Function::FunctionHandler'
-    functionMemory: 512
-    functionTimeout: 60
+    runtime: 'dotnetcore2.1'
+    codeLocation: 'localfile'
+    localZipFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    roleARN: 'cloudform-LambdaExecutionRole-1XRKE2AES4R75'
+    environment: |
+      ExternalAccessKey=AKIAQYVSQZ3O3LYYLYW3
+      ExternalSecreteKey=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
+      StateMachineArn=arn:aws:states:ap-south-1:618393550001:stateMachine:PBLoanProcessOrchestration
+      StepBodyName=MyExecution
+      StepFunctionURL=https://g9yh14f7ve.execute-api.ap-south-1.amazonaws.com/Authorizeddev/execution
